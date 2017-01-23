@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NRMainVC.swift
 //  NewReader
 //
 //  Created by Abhishek Thapliyal on 1/23/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NRMainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +21,10 @@ class ViewController: UIViewController {
     }
 
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+//        NRNetworkManager().getNewsArticle()
+         NRNetworkManager().getNewsSource()
+    }
 }
 

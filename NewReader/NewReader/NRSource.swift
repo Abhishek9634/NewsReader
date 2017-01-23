@@ -15,10 +15,10 @@ class NRSource: NSObject {
     public var sourceDescription : NSString?
     public var url : NSString?
     public var category : NSString?
-//    public var launguage : NSString?
+    public var language : NSString?
     public var country : NSString?
     
-//    public var urlToLogos : NSDictionary?
+    public var urlsToLogos : [String: Any]?
     public var small : NSString?
     public var medium : NSString?
     public var large : NSString?
@@ -41,20 +41,21 @@ class NRSource: NSObject {
         self.sourceDescription = dictionary["description"] as? NSString
         self.url = dictionary["url"] as? NSString
         self.category = dictionary["category"] as? NSString
-//        self.launguage = dictionary["launguage"] as? NSString // GIVING NIL
+        self.language = dictionary["language"] as? NSString
         self.country = dictionary["country"] as? NSString
         
-//        self.urlToLogos = NSDictionary(dictionary : (dictionary["urlToLogos"] as! NSDictionary))
-//        self.small = self.urlToLogos?["small"] as? NSString
-//        self.medium = self.urlToLogos?["medium"] as? NSString
-//        self.large = self.urlToLogos?["large"] as? NSString
+        self.urlsToLogos = dictionary["urlsToLogos"] as! [String : Any]?
+        self.small = self.urlsToLogos?["small"] as? NSString
+        self.medium = self.urlsToLogos?["medium"] as? NSString
+        self.large = self.urlsToLogos?["large"] as? NSString
+        print("SMALL : \(self.small!)")
         
         self.sortBysAvailable = NSArray(array: dictionary["sortBysAvailable"] as! NSArray)
     }
     
-//    override var description : String {
-//        
-//        return "id : \(self.id!)\n name : \(self.name!)\n description : \(self.sourceDescription!)\n url : \(self.url!)\n category : \(self.category!)\n launguage : \(self.launguage?.description)\n urlToLogos : \(self.urlToLogos?.description)\n sortBysAvailable : \(self.sortBysAvailable?.description)"
-//    }
+    override var description : String {
+        
+        return "id : \(self.id!)\n name : \(self.name!)\n description : \(self.sourceDescription!)\n url : \(self.url!)\n category : \(self.category!)\n language : \(self.language!)\n urlToLogos : \(self.urlsToLogos?.description)\n sortBysAvailable : \(self.sortBysAvailable?.description)"
+    }
 
 }

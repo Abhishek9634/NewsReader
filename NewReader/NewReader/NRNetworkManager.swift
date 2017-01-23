@@ -77,7 +77,7 @@ class NRNetworkManager: NSObject {
                 
                 let sourceOb = NRSource(dictionary: sourcesDict)
                 self.sourceArray?.add(sourceOb)
-//                print("SOURCE \n \(sourceOb.description)")
+                print("SOURCE \n \(sourceOb.description)")
             }
         })
     }

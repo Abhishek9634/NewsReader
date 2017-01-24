@@ -6,7 +6,8 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
-import UIKit
+import UIKit 
+import SDWebImage
 
 class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -37,6 +38,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
     }
     
     //====================================================================================================================================
@@ -70,7 +72,8 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
                                                                                                for: indexPath) as! NRArticleCollectionViewCell
         
         let article = self.collectionArray?.object(at: indexPath.row) as! NRArticle
-//        matchesViewCell.articleImageView
+        let imageURL = NSURL(string : article.urlToImage as! String)
+        matchesViewCell.articleImageView.sd_setImage(with: imageURL as URL!)
         matchesViewCell.titleLabel.text = article.title as String?
         
         print("ARTICLE_TITLE : \(article.title!)")

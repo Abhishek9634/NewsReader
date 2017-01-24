@@ -11,6 +11,7 @@
 		46357BCE1E371BB100EC489E /* NRSourcesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BCD1E371BB100EC489E /* NRSourcesVC.swift */; };
 		46357BD41E37B17200EC489E /* NRArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BD31E37B17200EC489E /* NRArticleCollectionViewCell.swift */; };
 		46357BD61E37B18300EC489E /* NRSourceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BD51E37B18300EC489E /* NRSourceCollectionViewCell.swift */; };
+		466CEC381E37D6A9005804CF /* NRArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466CEC371E37D6A9005804CF /* NRArticleDetailVC.swift */; };
 		466F6DEC1E366557001FEE5B /* NRHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DEB1E366557001FEE5B /* NRHTTPRequest.swift */; };
 		466F6DEE1E3665A7001FEE5B /* NRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DED1E3665A7001FEE5B /* NRNetworkManager.swift */; };
 		466F6DF01E366BA1001FEE5B /* NRHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DEF1E366BA1001FEE5B /* NRHTTPResponse.swift */; };
@@ -53,6 +54,7 @@
 		46357BCD1E371BB100EC489E /* NRSourcesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRSourcesVC.swift; sourceTree = "<group>"; };
 		46357BD31E37B17200EC489E /* NRArticleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRArticleCollectionViewCell.swift; sourceTree = "<group>"; };
 		46357BD51E37B18300EC489E /* NRSourceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRSourceCollectionViewCell.swift; sourceTree = "<group>"; };
+		466CEC371E37D6A9005804CF /* NRArticleDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRArticleDetailVC.swift; sourceTree = "<group>"; };
 		466F6DEB1E366557001FEE5B /* NRHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPRequest.swift; sourceTree = "<group>"; };
 		466F6DED1E3665A7001FEE5B /* NRNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRNetworkManager.swift; sourceTree = "<group>"; };
 		466F6DEF1E366BA1001FEE5B /* NRHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRHTTPResponse.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				46D7F9C61E36633200A453E3 /* NRMainVC.swift */,
 				46357BCB1E371B9E00EC489E /* NRArticlesVC.swift */,
 				46357BCD1E371BB100EC489E /* NRSourcesVC.swift */,
+				466CEC371E37D6A9005804CF /* NRArticleDetailVC.swift */,
 			);
 			name = NRViewControllers;
 			sourceTree = "<group>";
@@ -523,6 +526,7 @@
 				466F6DF01E366BA1001FEE5B /* NRHTTPResponse.swift in Sources */,
 				466F6DF81E3699AA001FEE5B /* NRSource.swift in Sources */,
 				466F6DEC1E366557001FEE5B /* NRHTTPRequest.swift in Sources */,
+				466CEC381E37D6A9005804CF /* NRArticleDetailVC.swift in Sources */,
 				46357BCE1E371BB100EC489E /* NRSourcesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

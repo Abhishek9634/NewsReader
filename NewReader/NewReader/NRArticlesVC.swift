@@ -59,6 +59,10 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let articleDetailVC : NRArticleDetailVC = storyBoard.instantiateViewController(withIdentifier: "NRArticleDetailVC") as! NRArticleDetailVC
+        articleDetailVC.article = self.collectionArray?.object(at: indexPath.row) as? NRArticle
+        self.present(articleDetailVC, animated: true, completion: nil)
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -90,8 +94,10 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         let networkManager = NRNetworkManager()
         networkManager.getNewsArticle(sortType: "", completion: { (articleArray, error) in
             
-            self.collectionArray = NSMutableArray(array: articleArray)
-            self.collectionView.reloadData()
+            OperationQueue.main.addOperation {
+                self.collectionArray = NSMutableArray(array: articleArray)
+                self.collectionView.reloadData()
+            }
         })
     }
 }

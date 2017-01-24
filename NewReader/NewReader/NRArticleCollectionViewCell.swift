@@ -10,4 +10,6 @@ import UIKit
 
 class NRArticleCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
 }

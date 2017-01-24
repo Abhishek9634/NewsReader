@@ -32,7 +32,7 @@ class NRNetworkManager: NSObject {
     // GET ARTICLES METHOD
     //====================================================================================================================================
     
-    public func getNewsArticle() {
+    public func getNewsArticle(sortType:NSString, completion : @escaping (_ articleArray:NSArray, _ error:NSError?) -> Void) {
     
         let URLString : String = "https://newsapi.org/v1/articles"
         let param = String(format:"source=the-next-web&sortBy=latest&apiKey=%@", API_KEY)
@@ -54,6 +54,7 @@ class NRNetworkManager: NSObject {
                 self.articleArray?.add(article)
                 print("ARTICLE \n \(article.description)")
             }
+            completion(self.articleArray!, error)
         })
     }
     
@@ -61,11 +62,12 @@ class NRNetworkManager: NSObject {
     // GET SOURCE METHOD
     //====================================================================================================================================
     
-    public func getNewsSource() {
+    public func getNewsSource(completion : @escaping (_ sourceArray:NSArray, _ error:NSError?) -> Void) {
+        
         let URLString : String = "https://newsapi.org/v1/sources"
         let param = String(format:"language=%@", LANGUAGES.ENG.rawValue)
         let request : NSMutableURLRequest = NRHTTPRequest.getServerRequest(urlString: URLString, paramString: param)
-        NRHTTPResponse.responseWithRequest(request: request, requestTitle: "FETCH_SOURCE", completion: { (json, error) in
+        NRHTTPResponse.responseWithRequest(request: request, requestTitle: "FETCH_SOURCES", completion: { (json, error) in
             
             let dictionary : [String:Any] =  json as! [String : Any]
             
@@ -79,6 +81,7 @@ class NRNetworkManager: NSObject {
                 self.sourceArray?.add(sourceOb)
                 print("SOURCE \n \(sourceOb.description)")
             }
+            completion(self.sourceArray!, error)
         })
     }
 }

@@ -72,17 +72,17 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let matchesViewCell : NRArticleCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableCellIdentifier,
+        let articleViewCell : NRArticleCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableCellIdentifier,
                                                                                                for: indexPath) as! NRArticleCollectionViewCell
         
         let article = self.collectionArray?.object(at: indexPath.row) as! NRArticle
         let imageURL = NSURL(string : article.urlToImage as! String)
-        matchesViewCell.articleImageView.sd_setImage(with: imageURL as URL!)
-        matchesViewCell.titleLabel.text = article.title as String?
+        articleViewCell.articleImageView.sd_setImage(with: imageURL as URL!)
+        articleViewCell.titleLabel.text = article.title as String?
         
         print("ARTICLE_TITLE : \(article.title!)")
         
-        return matchesViewCell
+        return articleViewCell
     }
     
     //====================================================================================================================================

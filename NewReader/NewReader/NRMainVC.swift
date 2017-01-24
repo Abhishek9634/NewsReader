@@ -23,8 +23,6 @@ class NRMainVC: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         
-//        NRNetworkManager().getNewsArticle()
-//         NRNetworkManager().getNewsSource()
     }
 }
 

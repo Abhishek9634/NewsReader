@@ -75,6 +75,11 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         let articleViewCell : NRArticleCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableCellIdentifier,
                                                                                                for: indexPath) as! NRArticleCollectionViewCell
         
+        articleViewCell.backgroundColor = UIColor.white
+        if (indexPath.row % 2 != 0) {
+            articleViewCell.backgroundColor = UIColor(red:225.0/255, green:225.0/255, blue:250.0/255, alpha:0.2)
+        }
+        
         let article = self.collectionArray?.object(at: indexPath.row) as! NRArticle
         let imageURL = NSURL(string : article.urlToImage as! String)
         articleViewCell.articleImageView.sd_setImage(with: imageURL as URL!)

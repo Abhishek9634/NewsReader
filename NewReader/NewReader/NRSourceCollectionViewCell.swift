@@ -12,4 +12,6 @@ class NRSourceCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var sourceImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
 }

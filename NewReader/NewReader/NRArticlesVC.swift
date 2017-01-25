@@ -79,6 +79,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         let imageURL = NSURL(string : article.urlToImage as! String)
         articleViewCell.articleImageView.sd_setImage(with: imageURL as URL!)
         articleViewCell.titleLabel.text = article.title as String?
+        articleViewCell.authorLabel.text = article.author as String?
         
         print("ARTICLE_TITLE : \(article.title!)")
         

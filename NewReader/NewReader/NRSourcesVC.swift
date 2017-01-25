@@ -77,6 +77,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let imageURL = NSURL(string : source.large as! String)
         sourceViewCell.sourceImageView.sd_setImage(with: imageURL as URL!)
         sourceViewCell.nameLabel.text = source.name as String?
+        sourceViewCell.descriptionLabel.text = source.sourceDescription as String?
         
         print("SOURCE_LARGE : \(source.large!)")
         

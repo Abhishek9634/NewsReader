@@ -73,6 +73,11 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let sourceViewCell : NRSourceCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reusableCellIdentifier,
                                                                                                for: indexPath) as! NRSourceCollectionViewCell
         
+        sourceViewCell.backgroundColor = UIColor.white
+        if (indexPath.row % 2 != 0) {
+            sourceViewCell.backgroundColor = UIColor(red:180.0/255, green:100.0/255, blue:100.0/255, alpha:0.2)
+        }
+        
         let source = self.collectionArray?.object(at: indexPath.row) as! NRSource
         let imageURL = NSURL(string : source.large as! String)
         sourceViewCell.sourceImageView.sd_setImage(with: imageURL as URL!)

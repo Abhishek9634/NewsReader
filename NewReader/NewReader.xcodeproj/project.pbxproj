@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462CD6181E3A98E1001ADB0E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462CD6171E3A98E1001ADB0E /* Messages.framework */; };
+		462CD61B1E3A98E1001ADB0E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */; };
+		462CD61E1E3A98E1001ADB0E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462CD61C1E3A98E1001ADB0E /* MainInterface.storyboard */; };
+		462CD6201E3A98E1001ADB0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462CD61F1E3A98E1001ADB0E /* Assets.xcassets */; };
+		462CD6241E3A98E1001ADB0E /* NewsiMsgExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		462CD6291E3A990A001ADB0E /* NRArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DF11E36705D001FEE5B /* NRArticle.swift */; };
+		462CD62A1E3A990A001ADB0E /* NRSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DF71E3699AA001FEE5B /* NRSource.swift */; };
+		462CD62B1E3A990A001ADB0E /* NRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DED1E3665A7001FEE5B /* NRNetworkManager.swift */; };
+		462CD62C1E3A990A001ADB0E /* NRHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DEB1E366557001FEE5B /* NRHTTPRequest.swift */; };
+		462CD62D1E3A990A001ADB0E /* NRHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DEF1E366BA1001FEE5B /* NRHTTPResponse.swift */; };
+		462CD6311E3A9A73001ADB0E /* NRExtTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CD6301E3A9A73001ADB0E /* NRExtTableCell.swift */; };
 		46357BCC1E371B9E00EC489E /* NRArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BCB1E371B9E00EC489E /* NRArticlesVC.swift */; };
 		46357BCE1E371BB100EC489E /* NRSourcesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BCD1E371BB100EC489E /* NRSourcesVC.swift */; };
 		46357BD41E37B17200EC489E /* NRArticleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46357BD31E37B17200EC489E /* NRArticleCollectionViewCell.swift */; };
@@ -50,6 +61,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		462CD6221E3A98E1001ADB0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D7F9B91E36633200A453E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 462CD6151E3A98E1001ADB0E;
+			remoteInfo = NewsiMsgExtension;
+		};
 		46D7F9D91E36633200A453E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46D7F9B91E36633200A453E3 /* Project object */;
@@ -66,8 +84,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		462CD6281E3A98E1001ADB0E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				462CD6241E3A98E1001ADB0E /* NewsiMsgExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewsiMsgExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		462CD6171E3A98E1001ADB0E /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		462CD61D1E3A98E1001ADB0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		462CD61F1E3A98E1001ADB0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		462CD6211E3A98E1001ADB0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		462CD6301E3A9A73001ADB0E /* NRExtTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRExtTableCell.swift; sourceTree = "<group>"; };
 		46357BCB1E371B9E00EC489E /* NRArticlesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRArticlesVC.swift; sourceTree = "<group>"; };
 		46357BCD1E371BB100EC489E /* NRSourcesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRSourcesVC.swift; sourceTree = "<group>"; };
 		46357BD31E37B17200EC489E /* NRArticleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRArticleCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,6 +163,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		462CD6131E3A98E1001ADB0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462CD6181E3A98E1001ADB0E /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46D7F9BE1E36633200A453E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +199,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		462CD6191E3A98E1001ADB0E /* NewsiMsgExtension */ = {
+			isa = PBXGroup;
+			children = (
+				462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */,
+				462CD61C1E3A98E1001ADB0E /* MainInterface.storyboard */,
+				462CD61F1E3A98E1001ADB0E /* Assets.xcassets */,
+				462CD6211E3A98E1001ADB0E /* Info.plist */,
+				462CD6301E3A9A73001ADB0E /* NRExtTableCell.swift */,
+			);
+			path = NewsiMsgExtension;
+			sourceTree = "<group>";
+		};
 		46357BCA1E371B6900EC489E /* NRViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +298,7 @@
 				46D7F9C31E36633200A453E3 /* NewReader */,
 				46D7F9DB1E36633200A453E3 /* NewReaderTests */,
 				46D7F9E61E36633300A453E3 /* NewReaderUITests */,
+				462CD6191E3A98E1001ADB0E /* NewsiMsgExtension */,
 				46D7F9C21E36633200A453E3 /* Products */,
 				85A29BE8C4AF6E0340060542 /* Pods */,
 				CF456856C3C6E66BF027488D /* Frameworks */,
@@ -251,6 +311,7 @@
 				46D7F9C11E36633200A453E3 /* NewReader.app */,
 				46D7F9D81E36633200A453E3 /* NewReaderTests.xctest */,
 				46D7F9E31E36633300A453E3 /* NewReaderUITests.xctest */,
+				462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +373,7 @@
 				FCF6B219D938981C69389A42 /* Pods_NewReader.framework */,
 				597D7846C3B47A1533F45154 /* Pods_NewReaderTests.framework */,
 				2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */,
+				462CD6171E3A98E1001ADB0E /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,6 +381,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		462CD6151E3A98E1001ADB0E /* NewsiMsgExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 462CD6271E3A98E1001ADB0E /* Build configuration list for PBXNativeTarget "NewsiMsgExtension" */;
+			buildPhases = (
+				462CD6121E3A98E1001ADB0E /* Sources */,
+				462CD6131E3A98E1001ADB0E /* Frameworks */,
+				462CD6141E3A98E1001ADB0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsiMsgExtension;
+			productName = NewsiMsgExtension;
+			productReference = 462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		46D7F9C01E36633200A453E3 /* NewReader */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46D7F9EC1E36633300A453E3 /* Build configuration list for PBXNativeTarget "NewReader" */;
@@ -329,10 +408,12 @@
 				46D7F9BF1E36633200A453E3 /* Resources */,
 				C2F6984AE4716891AB740C5A /* [CP] Embed Pods Frameworks */,
 				FE744045D912D0EE8BBD9BC4 /* [CP] Copy Pods Resources */,
+				462CD6281E3A98E1001ADB0E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				462CD6231E3A98E1001ADB0E /* PBXTargetDependency */,
 			);
 			name = NewReader;
 			productName = NewReader;
@@ -391,6 +472,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Abhishek Thapliyal";
 				TargetAttributes = {
+					462CD6151E3A98E1001ADB0E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					46D7F9C01E36633200A453E3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
@@ -424,11 +509,21 @@
 				46D7F9C01E36633200A453E3 /* NewReader */,
 				46D7F9D71E36633200A453E3 /* NewReaderTests */,
 				46D7F9E21E36633300A453E3 /* NewReaderUITests */,
+				462CD6151E3A98E1001ADB0E /* NewsiMsgExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		462CD6141E3A98E1001ADB0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462CD6201E3A98E1001ADB0E /* Assets.xcassets in Resources */,
+				462CD61E1E3A98E1001ADB0E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46D7F9BF1E36633200A453E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -609,6 +704,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		462CD6121E3A98E1001ADB0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462CD6311E3A9A73001ADB0E /* NRExtTableCell.swift in Sources */,
+				462CD6291E3A990A001ADB0E /* NRArticle.swift in Sources */,
+				462CD62A1E3A990A001ADB0E /* NRSource.swift in Sources */,
+				462CD62B1E3A990A001ADB0E /* NRNetworkManager.swift in Sources */,
+				462CD61B1E3A98E1001ADB0E /* MessagesViewController.swift in Sources */,
+				462CD62D1E3A990A001ADB0E /* NRHTTPResponse.swift in Sources */,
+				462CD62C1E3A990A001ADB0E /* NRHTTPRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46D7F9BD1E36633200A453E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -651,6 +760,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		462CD6231E3A98E1001ADB0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 462CD6151E3A98E1001ADB0E /* NewsiMsgExtension */;
+			targetProxy = 462CD6221E3A98E1001ADB0E /* PBXContainerItemProxy */;
+		};
 		46D7F9DA1E36633200A453E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46D7F9C01E36633200A453E3 /* NewReader */;
@@ -664,6 +778,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		462CD61C1E3A98E1001ADB0E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				462CD61D1E3A98E1001ADB0E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		46D7F9C81E36633200A453E3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -683,6 +805,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		462CD6251E3A98E1001ADB0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NewsiMsgExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marvel.NewReader.NewsiMsgExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		462CD6261E3A98E1001ADB0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = NewsiMsgExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Marvel.NewReader.NewsiMsgExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		46D7F9EA1E36633300A453E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -780,6 +932,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83C66AED5ECF240AE3852510 /* Pods-NewReader.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -798,6 +951,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D03C843EA7DA77DB42E5C4D4 /* Pods-NewReader.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -872,6 +1026,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		462CD6271E3A98E1001ADB0E /* Build configuration list for PBXNativeTarget "NewsiMsgExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				462CD6251E3A98E1001ADB0E /* Debug */,
+				462CD6261E3A98E1001ADB0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46D7F9BC1E36633200A453E3 /* Build configuration list for PBXProject "NewReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

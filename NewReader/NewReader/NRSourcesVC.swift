@@ -11,12 +11,22 @@ import SDWebImage
 
 class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var topView: UIView!                     // 1st UIVIEW WITH TITLE SOURCE
+    @IBOutlet weak var segmentBaseView: UIView!             // 2nd UIVIEW : USING FOR SEGMENT
+    
+    var segmentedControl : HMSegmentedControl?
+    
     let reusableCellIdentifier = "NRSourceCollectionViewCell" as String
     
+    var mainSourceArray : NSMutableArray?
     var collectionArray : NSMutableArray?
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,25 +36,69 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         self.collectionView.dataSource = self
         
         self.collectionArray = NSMutableArray()
-        
         self.fetchSources()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.intializeSegmentView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        for familyName:String in UIFont.familyNames {
+            print("Family Name: \(familyName)")
+            for fontName:String in UIFont.fontNames(forFamilyName: familyName) {
+                print("--Font Name: \(fontName)")
+            }
+        }
     }
     
     //====================================================================================================================================
     // SEGMENT VIEW ACTION
     //====================================================================================================================================
     
-    @IBAction func segmentValueChanged(_ sender: Any) {
+    func intializeSegmentView() {
+    
+        let topFrame : CGRect = self.segmentBaseView.frame
+        let topViewSize : CGSize = topFrame.size
         
+        self.segmentedControl = HMSegmentedControl(frame: CGRect(x: topFrame.origin.x,
+                                                                 y: 0,
+                                                                 width: topViewSize.width,
+                                                                 height: topViewSize.height))
+        
+        self.segmentedControl?.sectionTitles = ["General",
+                                                "Technology",
+                                                "Sport",
+                                                "Entertainment",
+                                                "Business",
+                                                "Gaming",
+                                                "Music",
+                                                "Science"]
+        
+        self.segmentedControl?.selectedSegmentIndex = 1
+        self.segmentedControl?.backgroundColor = UIColor(red:0.7, green:0.7, blue:0.7, alpha:1.0)
+        self.segmentedControl?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.segmentedControl?.selectedTitleTextAttributes = [NSForegroundColorAttributeName: UIColor(red:1.0, green:1.0, blue:1.0, alpha:1.0)]
+        self.segmentedControl?.selectionIndicatorColor = UIColor(red:0.3, green:0.3, blue:0.3, alpha:1.0)
+        self.segmentedControl?.selectionStyle = HMSegmentedControlSelectionStyle.box
+        self.segmentedControl?.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocation.down
+        self.segmentedControl?.titleTextAttributes = [NSFontAttributeName : UIFont(name: "SanFranciscoText-Semibold", size: 16) as Any]
+        
+        self.segmentBaseView.addSubview(segmentedControl!)
+        
+        self.segmentedControl?.indexChangeBlock = {(_ index: Int) -> Void in
+            self.segmentedControlChangedValue(index: index)
+        }
+    }
+    
+    func segmentedControlChangedValue(index: Int) {
+        
+        let category = self.segmentedControl?.sectionTitles[index] as! NSString
+        var arrayForIndex : [Any]?
+        let predicate = NSPredicate(format: "SELF.category contains[cd] %@", category)
+        arrayForIndex = self.mainSourceArray?.filtered(using: predicate)
+//        print("CATEGORY : \(category) && ARRAY :: \(arrayForIndex!)")
+        self.collectionArray = NSMutableArray(array: arrayForIndex!)
+        self.collectionView.reloadData()
     }
     
     //====================================================================================================================================
@@ -84,7 +138,8 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         sourceViewCell.nameLabel.text = source.name as String?
         sourceViewCell.descriptionLabel.text = source.sourceDescription as String?
         
-        print("SOURCE_LARGE : \(source.large!)")
+//        print("SOURCE_LARGE : \(source.large!)")
+//        print("SOURCE_CATEGORY : \(source.category!)")
         
         return sourceViewCell
     }
@@ -99,8 +154,9 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         networkManager.getNewsSource(completion: { (sourceArray, error) in
             
             OperationQueue.main.addOperation {
-                self.collectionArray = NSMutableArray(array: sourceArray)
-                self.collectionView.reloadData()
+                self.mainSourceArray = NSMutableArray(array: sourceArray)
+                self.segmentedControlChangedValue(index: 1)
+//                self.collectionView.reloadData()
             }
         })
     }

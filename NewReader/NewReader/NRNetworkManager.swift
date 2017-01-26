@@ -52,7 +52,7 @@ class NRNetworkManager: NSObject {
                 
                 let article = NRArticle(dictionary: articleDict)
                 self.articleArray?.add(article)
-                print("ARTICLE \n \(article.description)")
+//                print("ARTICLE \n \(article.description)")
             }
             completion(self.articleArray!, error)
         })
@@ -79,7 +79,7 @@ class NRNetworkManager: NSObject {
                 
                 let sourceOb = NRSource(dictionary: sourcesDict)
                 self.sourceArray?.add(sourceOb)
-                print("SOURCE \n \(sourceOb.description)")
+//                print("SOURCE \n \(sourceOb.description)")
             }
             completion(self.sourceArray!, error)
         })

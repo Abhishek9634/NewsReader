@@ -18,6 +18,8 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     var segmentedControl : HMSegmentedControl?
     
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+    
     let reusableCellIdentifier = "NRSourceCollectionViewCell" as String
     
     var mainSourceArray : NSMutableArray?
@@ -68,8 +70,8 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         self.segmentedControl?.sectionTitles = ["General",
                                                 "Technology",
                                                 "Sport",
-                                                "Entertainment",
                                                 "Business",
+                                                "Entertainment",
                                                 "Gaming",
                                                 "Music",
                                                 "Science"]
@@ -81,7 +83,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         self.segmentedControl?.selectionIndicatorColor = UIColor(red:0.3, green:0.3, blue:0.3, alpha:1.0)
         self.segmentedControl?.selectionStyle = HMSegmentedControlSelectionStyle.box
         self.segmentedControl?.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocation.down
-        self.segmentedControl?.titleTextAttributes = [NSFontAttributeName : UIFont(name: "SanFranciscoText-Semibold", size: 16) as Any]
+        self.segmentedControl?.titleTextAttributes = [NSFontAttributeName : UIFont(name: "SanFranciscoDisplay-Regular", size: 18) as Any]
         
         self.segmentBaseView.addSubview(segmentedControl!)
         
@@ -97,8 +99,12 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         let predicate = NSPredicate(format: "SELF.category contains[cd] %@", category)
         arrayForIndex = self.mainSourceArray?.filtered(using: predicate)
 //        print("CATEGORY : \(category) && ARRAY :: \(arrayForIndex!)")
-        self.collectionArray = NSMutableArray(array: arrayForIndex!)
-        self.collectionView.reloadData()
+        
+//        if ((self.collectionArray?.count)! > 0){
+            self.collectionArray = NSMutableArray(array: arrayForIndex!)
+            self.collectionView.reloadData()
+//        }
+         self.loader.stopAnimating()
     }
     
     //====================================================================================================================================
@@ -150,13 +156,13 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     
     func fetchSources() {
         
+        self.loader.startAnimating()
         let networkManager = NRNetworkManager()
         networkManager.getNewsSource(completion: { (sourceArray, error) in
             
             OperationQueue.main.addOperation {
                 self.mainSourceArray = NSMutableArray(array: sourceArray)
                 self.segmentedControlChangedValue(index: 1)
-//                self.collectionView.reloadData()
             }
         })
     }

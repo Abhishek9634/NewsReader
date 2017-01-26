@@ -150,6 +150,11 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="54"/>
                                 <color key="backgroundColor" red="0.83128933800000004" green="1" blue="0.83773132250000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="chn-PO-PdD">
+                                <rect key="frame" x="170" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -169,6 +174,7 @@
                     <tabBarItem key="tabBarItem" title="Sources" id="7uJ-8d-EmR"/>
                     <connections>
                         <outlet property="collectionView" destination="xei-m6-zMg" id="sZh-RS-mGF"/>
+                        <outlet property="loader" destination="chn-PO-PdD" id="Ndn-i3-2Rv"/>
                         <outlet property="segmentBaseView" destination="zag-fj-5i4" id="pPV-C5-kOl"/>
                         <outlet property="topView" destination="7il-Je-mWX" id="nd9-6C-YOO"/>
                     </connections>

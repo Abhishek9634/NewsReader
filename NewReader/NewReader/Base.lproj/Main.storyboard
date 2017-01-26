@@ -277,6 +277,11 @@
                                     <constraint firstAttribute="height" constant="44" id="vSe-nA-mU8"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4SX-3X-rUR">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -292,6 +297,7 @@
                     <tabBarItem key="tabBarItem" title="Articles" id="4DT-zx-bQi"/>
                     <connections>
                         <outlet property="collectionView" destination="rWv-7M-cWj" id="PVg-wa-d2C"/>
+                        <outlet property="loader" destination="4SX-3X-rUR" id="kp4-IF-Up6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMV-RY-vm6" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -17,6 +17,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     var collectionArray : NSMutableArray?
     
     override func didReceiveMemoryWarning() {
@@ -97,12 +98,14 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
  
     func fetchArticles() {
         
+        self.loader.startAnimating()
         let networkManager = NRNetworkManager()
         networkManager.getNewsArticle(sortType: "", completion: { (articleArray, error) in
             
             OperationQueue.main.addOperation {
                 self.collectionArray = NSMutableArray(array: articleArray)
                 self.collectionView.reloadData()
+                self.loader.stopAnimating()
             }
         })
     }

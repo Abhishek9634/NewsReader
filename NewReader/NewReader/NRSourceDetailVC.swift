@@ -14,14 +14,13 @@ class NRSourceDetailVC: UIViewController {
     @IBOutlet weak var categoryLabel: UILabel?
     @IBOutlet weak var sourceImageView: UIImageView?
     @IBOutlet weak var nameLabel: UILabel?
-    @IBOutlet weak var urlTextView: UITextView?
     @IBOutlet weak var descritionTextView: UITextView?
     
     var source : NRSource?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -38,13 +37,15 @@ class NRSourceDetailVC: UIViewController {
         self.categoryLabel?.text = self.source?.category as String?
         self.nameLabel?.text = self.source?.name as String?
         self.descritionTextView?.text = self.source?.sourceDescription as String?
-        self.urlTextView?.text = self.source?.url as String?
+    }
+    
+    @IBAction func redirectWeb(_ sender: Any) {
+        let sourceURL = NSURL(string : self.source?.url as! String)
+        UIApplication.shared.open(sourceURL as! URL)
     }
     
     @IBAction func backButtonAction(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-
-
 }

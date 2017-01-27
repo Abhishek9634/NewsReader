@@ -100,11 +100,11 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         arrayForIndex = self.mainSourceArray?.filtered(using: predicate)
 //        print("CATEGORY : \(category) && ARRAY :: \(arrayForIndex!)")
         
-//        if ((self.collectionArray?.count)! > 0){
+        if ((self.mainSourceArray?.count)! > 0) {
             self.collectionArray = NSMutableArray(array: arrayForIndex!)
             self.collectionView.reloadData()
-//        }
-         self.loader.stopAnimating()
+        }
+        self.loader.stopAnimating()
     }
     
     //====================================================================================================================================

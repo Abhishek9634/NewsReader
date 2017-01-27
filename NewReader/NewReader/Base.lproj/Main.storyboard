@@ -16,8 +16,8 @@
         <array key="CARPE DIEM MARK DEMO.otf">
             <string>CARPEDIEMMARKDEMO</string>
         </array>
-        <array key="SanFranciscoDisplay-Regular.otf">
-            <string>SanFranciscoDisplay-Regular</string>
+        <array key="NoneShallPassDEMO-KCFonts.ttf">
+            <string>NoneShallPass</string>
         </array>
         <array key="SanFranciscoText-Light.otf">
             <string>SanFranciscoText-Light</string>
@@ -108,7 +108,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-aA-4Y0">
                                         <rect key="frame" x="83" y="8" width="208" height="28"/>
-                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="NoneShallPass" family="None Shall Pass" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -301,7 +301,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Articles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbq-Z7-SJI">
                                         <rect key="frame" x="83" y="8" width="208" height="28"/>
-                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="NoneShallPass" family="None Shall Pass" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>

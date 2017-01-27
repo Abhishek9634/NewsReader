@@ -83,7 +83,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         self.segmentedControl?.selectionIndicatorColor = UIColor(red:0.3, green:0.3, blue:0.3, alpha:1.0)
         self.segmentedControl?.selectionStyle = HMSegmentedControlSelectionStyle.box
         self.segmentedControl?.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocation.down
-        self.segmentedControl?.titleTextAttributes = [NSFontAttributeName : UIFont(name: "SanFranciscoDisplay-Regular", size: 18) as Any]
+        self.segmentedControl?.titleTextAttributes = [NSFontAttributeName : UIFont(name: "SanFranciscoText-Regular", size: 18) as Any]
         
         self.segmentBaseView.addSubview(segmentedControl!)
         

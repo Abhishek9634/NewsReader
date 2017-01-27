@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4603EA031E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4603EA021E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf */; };
 		461B8AE81E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */; };
 		462CD6181E3A98E1001ADB0E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462CD6171E3A98E1001ADB0E /* Messages.framework */; };
 		462CD61B1E3A98E1001ADB0E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */; };
@@ -102,6 +103,7 @@
 
 /* Begin PBXFileReference section */
 		2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4603EA021E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NoneShallPassDEMO-KCFonts.ttf"; path = "NewReader/SF_UI_FONT/NoneShallPassDEMO-KCFonts.ttf"; sourceTree = "<group>"; };
 		461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CARPE DIEM MARK DEMO.otf"; path = "NewReader/SF_UI_FONT/CARPE DIEM MARK DEMO.otf"; sourceTree = "<group>"; };
 		462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewsiMsgExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		462CD6171E3A98E1001ADB0E /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
@@ -299,6 +301,7 @@
 		46D7F9B81E36633200A453E3 = {
 			isa = PBXGroup;
 			children = (
+				4603EA021E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf */,
 				463BBB2A1E392D4B00D2BD80 /* SEGMENTCONTROL */,
 				46D314971E38E38D00D62934 /* FONTS */,
 				46D7F9C31E36633200A453E3 /* NewReader */,
@@ -534,6 +537,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4603EA031E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf in Resources */,
 				461B8AE81E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf in Resources */,
 				46AB02BA1E3B966C00F4A04C /* CANDY.otf in Resources */,
 				46D314881E38E37600D62934 /* SanFranciscoDisplay-Black.otf in Resources */,

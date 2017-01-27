@@ -100,11 +100,10 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         arrayForIndex = self.mainSourceArray?.filtered(using: predicate)
 //        print("CATEGORY : \(category) && ARRAY :: \(arrayForIndex!)")
         
-        if ((self.mainSourceArray?.count)! > 0) {
+        if ((self.mainSourceArray != nil) && (self.mainSourceArray?.count)! > 0) {
             self.collectionArray = NSMutableArray(array: arrayForIndex!)
             self.collectionView.reloadData()
         }
-        self.loader.stopAnimating()
     }
     
     //====================================================================================================================================
@@ -163,6 +162,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
             OperationQueue.main.addOperation {
                 self.mainSourceArray = NSMutableArray(array: sourceArray)
                 self.segmentedControlChangedValue(index: 1)
+                self.loader.stopAnimating()
             }
         })
     }

@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CARPE DIEM MARK DEMO.otf">
+            <string>CARPEDIEMMARKDEMO</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -23,37 +28,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nicklefox_logo" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-9G-oYb">
-                                <rect key="frame" x="88" y="89" width="199" height="198"/>
+                                <rect key="frame" x="88" y="234" width="199" height="198"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickelFox" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-6o-I9b">
-                                <rect key="frame" x="16" y="378" width="343" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="MPa-Xw-P8W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Reader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDA-tS-3nE">
-                                <rect key="frame" x="16" y="438" width="343" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="xDN-1a-APR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <rect key="frame" x="16" y="70" width="343" height="98"/>
+                                <fontDescription key="fontDescription" name="CARPEDIEMMARKDEMO" family="CARPE DIEM MARK DEMO" pointSize="64"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.36078431372549019" green="0.7803921568627451" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iHl-9G-oYb" firstAttribute="centerX" secondItem="HZr-6o-I9b" secondAttribute="centerX" id="7qC-2u-xv3"/>
-                            <constraint firstItem="iHl-9G-oYb" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="69" id="KFQ-3j-3V0"/>
-                            <constraint firstItem="HZr-6o-I9b" firstAttribute="top" secondItem="iHl-9G-oYb" secondAttribute="bottom" constant="91" id="NyB-Yt-xyX"/>
-                            <constraint firstItem="HZr-6o-I9b" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="O5v-Yc-vuF"/>
-                            <constraint firstItem="ZDA-tS-3nE" firstAttribute="top" secondItem="HZr-6o-I9b" secondAttribute="bottom" constant="24" id="PJv-pf-eHh"/>
-                            <constraint firstItem="HZr-6o-I9b" firstAttribute="trailing" secondItem="ZDA-tS-3nE" secondAttribute="trailing" id="XNe-rE-fjL"/>
-                            <constraint firstItem="HZr-6o-I9b" firstAttribute="leading" secondItem="ZDA-tS-3nE" secondAttribute="leading" id="XbH-A3-Pty"/>
-                            <constraint firstItem="HZr-6o-I9b" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="cvf-jl-2tN"/>
+                            <constraint firstItem="HZr-6o-I9b" firstAttribute="centerX" secondItem="iHl-9G-oYb" secondAttribute="centerX" id="0TZ-6H-dtx"/>
+                            <constraint firstItem="HZr-6o-I9b" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="OKf-ga-Xy3"/>
+                            <constraint firstItem="HZr-6o-I9b" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="YSU-8B-F1x"/>
+                            <constraint firstItem="HZr-6o-I9b" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="q78-Wu-5lb"/>
+                            <constraint firstItem="iHl-9G-oYb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s0x-db-xcW"/>
+                            <constraint firstItem="iHl-9G-oYb" firstAttribute="top" secondItem="HZr-6o-I9b" secondAttribute="bottom" constant="66" id="u1W-mv-HBd"/>
                         </constraints>
                     </view>
                 </viewController>

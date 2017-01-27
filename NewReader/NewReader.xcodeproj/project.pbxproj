@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461B8AE81E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */; };
 		462CD6181E3A98E1001ADB0E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462CD6171E3A98E1001ADB0E /* Messages.framework */; };
 		462CD61B1E3A98E1001ADB0E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */; };
 		462CD61E1E3A98E1001ADB0E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462CD61C1E3A98E1001ADB0E /* MainInterface.storyboard */; };
@@ -32,6 +33,7 @@
 		466F6DF21E36705D001FEE5B /* NRArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DF11E36705D001FEE5B /* NRArticle.swift */; };
 		466F6DF41E3670BE001FEE5B /* NRDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DF31E3670BE001FEE5B /* NRDBManager.swift */; };
 		466F6DF81E3699AA001FEE5B /* NRSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6DF71E3699AA001FEE5B /* NRSource.swift */; };
+		46AB02BA1E3B966C00F4A04C /* CANDY.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46AB02B91E3B966C00F4A04C /* CANDY.otf */; };
 		46D314881E38E37600D62934 /* SanFranciscoDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D314791E38E37600D62934 /* SanFranciscoDisplay-Black.otf */; };
 		46D314891E38E37600D62934 /* SanFranciscoDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D3147A1E38E37600D62934 /* SanFranciscoDisplay-Bold.otf */; };
 		46D3148A1E38E37600D62934 /* SanFranciscoDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46D3147B1E38E37600D62934 /* SanFranciscoDisplay-Heavy.otf */; };
@@ -100,6 +102,7 @@
 
 /* Begin PBXFileReference section */
 		2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CARPE DIEM MARK DEMO.otf"; path = "NewReader/SF_UI_FONT/CARPE DIEM MARK DEMO.otf"; sourceTree = "<group>"; };
 		462CD6161E3A98E1001ADB0E /* NewsiMsgExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NewsiMsgExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		462CD6171E3A98E1001ADB0E /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		462CD61A1E3A98E1001ADB0E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		466F6DF11E36705D001FEE5B /* NRArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRArticle.swift; sourceTree = "<group>"; };
 		466F6DF31E3670BE001FEE5B /* NRDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRDBManager.swift; sourceTree = "<group>"; };
 		466F6DF71E3699AA001FEE5B /* NRSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NRSource.swift; sourceTree = "<group>"; };
+		46AB02B91E3B966C00F4A04C /* CANDY.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CANDY.otf; path = NewReader/SF_UI_FONT/CANDY.otf; sourceTree = "<group>"; };
 		46D314791E38E37600D62934 /* SanFranciscoDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Black.otf"; path = "NewReader/SF_UI_FONT/SanFranciscoDisplay-Black.otf"; sourceTree = "<group>"; };
 		46D3147A1E38E37600D62934 /* SanFranciscoDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Bold.otf"; path = "NewReader/SF_UI_FONT/SanFranciscoDisplay-Bold.otf"; sourceTree = "<group>"; };
 		46D3147B1E38E37600D62934 /* SanFranciscoDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SanFranciscoDisplay-Heavy.otf"; path = "NewReader/SF_UI_FONT/SanFranciscoDisplay-Heavy.otf"; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 		46D314971E38E38D00D62934 /* FONTS */ = {
 			isa = PBXGroup;
 			children = (
+				46AB02B91E3B966C00F4A04C /* CANDY.otf */,
+				461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */,
 				46D314791E38E37600D62934 /* SanFranciscoDisplay-Black.otf */,
 				46D3147A1E38E37600D62934 /* SanFranciscoDisplay-Bold.otf */,
 				46D3147B1E38E37600D62934 /* SanFranciscoDisplay-Heavy.otf */,
@@ -528,6 +534,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461B8AE81E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf in Resources */,
+				46AB02BA1E3B966C00F4A04C /* CANDY.otf in Resources */,
 				46D314881E38E37600D62934 /* SanFranciscoDisplay-Black.otf in Resources */,
 				46D314891E38E37600D62934 /* SanFranciscoDisplay-Bold.otf in Resources */,
 				46D3148A1E38E37600D62934 /* SanFranciscoDisplay-Heavy.otf in Resources */,

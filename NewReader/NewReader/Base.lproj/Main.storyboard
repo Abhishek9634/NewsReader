@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="CANDY.otf">
+            <string>CANDYINC</string>
+        </array>
         <array key="SanFranciscoDisplay-Regular.otf">
             <string>SanFranciscoDisplay-Regular</string>
         </array>
@@ -33,19 +36,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LVZ-jm-DVM">
+                                <rect key="frame" x="97" y="243" width="180" height="180"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Reader" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smE-PS-Ud4">
+                                <rect key="frame" x="16" y="91" width="343" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="saS-6H-cNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CANDYINC" pointSize="110">
+                                    <string key="family">CANDY INC. Copyright (c) 2010 by Billy Argel. All rights reserved. free for personal use only. complete set available contact billyargel@gmail.com</string>
+                                </fontDescription>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acI-RJ-dmy">
-                                <rect key="frame" x="90" y="318" width="180" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="90" y="547" width="195" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qdB-Nb-lWj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CANDYINC" pointSize="66">
+                                    <string key="family">CANDY INC. Copyright (c) 2010 by Billy Argel. All rights reserved. free for personal use only. complete set available contact billyargel@gmail.com</string>
+                                </fontDescription>
+                                <state key="normal" title="Let's Go">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="J6d-15-heI" kind="show" id="P5X-VZ-tnv"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.30980392156862746" green="0.63529411764705879" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="acI-RJ-dmy" secondAttribute="trailing" constant="89" id="4Cl-ah-Wza"/>
-                            <constraint firstItem="acI-RJ-dmy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="Laj-px-d7c"/>
-                            <constraint firstItem="acI-RJ-dmy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qDE-jJ-xZB"/>
+                            <constraint firstItem="smE-PS-Ud4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="38d-HA-aTc"/>
+                            <constraint firstItem="smE-PS-Ud4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="Gl0-GN-tBb"/>
+                            <constraint firstItem="acI-RJ-dmy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="LEF-YU-bnD"/>
+                            <constraint firstItem="smE-PS-Ud4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LUj-CS-5hq"/>
+                            <constraint firstItem="LVZ-jm-DVM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NTV-Tx-K6n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="acI-RJ-dmy" secondAttribute="bottom" constant="70" id="euc-C8-8ir"/>
+                            <constraint firstItem="smE-PS-Ud4" firstAttribute="centerX" secondItem="LVZ-jm-DVM" secondAttribute="centerX" id="fPn-4g-nGm"/>
+                            <constraint firstItem="LVZ-jm-DVM" firstAttribute="top" secondItem="smE-PS-Ud4" secondAttribute="bottom" constant="83" id="fdP-AV-zLR"/>
+                            <constraint firstItem="LVZ-jm-DVM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="81" id="kXk-bs-fpy"/>
+                            <constraint firstItem="LVZ-jm-DVM" firstAttribute="centerX" secondItem="acI-RJ-dmy" secondAttribute="centerX" id="tzZ-4H-Ml2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -546,4 +578,7 @@
             <point key="canvasLocation" x="1036" y="135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="newsLogo" width="160" height="160"/>
+    </resources>
 </document>

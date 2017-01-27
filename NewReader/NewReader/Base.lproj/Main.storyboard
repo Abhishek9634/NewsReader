@@ -13,6 +13,9 @@
         <array key="CANDY.otf">
             <string>CANDYINC</string>
         </array>
+        <array key="CARPE DIEM MARK DEMO.otf">
+            <string>CARPEDIEMMARKDEMO</string>
+        </array>
         <array key="SanFranciscoDisplay-Regular.otf">
             <string>SanFranciscoDisplay-Regular</string>
         </array>
@@ -371,7 +374,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-fq-1hj">
                                         <rect key="frame" x="67" y="8" width="248" height="28"/>
-                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="CANDYINC" pointSize="40">
+                                            <string key="family">CANDY INC. Copyright (c) 2010 by Billy Argel. All rights reserved. free for personal use only. complete set available contact billyargel@gmail.com</string>
+                                        </fontDescription>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -478,7 +483,9 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsy-Ux-b2N">
                                         <rect key="frame" x="67" y="8" width="248" height="28"/>
-                                        <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="CANDYINC" pointSize="40">
+                                            <string key="family">CANDY INC. Copyright (c) 2010 by Billy Argel. All rights reserved. free for personal use only. complete set available contact billyargel@gmail.com</string>
+                                        </fontDescription>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -524,7 +531,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lJb-Pc-5RX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SanFranciscoDisplay-Regular" family="San Francisco Display" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="CARPEDIEMMARKDEMO" family="CARPE DIEM MARK DEMO" pointSize="20"/>
                                 <state key="normal" title="Full Story"/>
                                 <connections>
                                     <action selector="redirectWeb:" destination="aKe-9L-yDN" eventType="touchDown" id="TRV-aW-irf"/>

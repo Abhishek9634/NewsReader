@@ -203,7 +203,7 @@
                             <constraint firstItem="7il-Je-mWX" firstAttribute="leading" secondItem="di2-Al-fc8" secondAttribute="leading" id="s5L-b4-e5s"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sources" id="7uJ-8d-EmR"/>
+                    <tabBarItem key="tabBarItem" title="Sources" image="GoogleNews30" id="7uJ-8d-EmR"/>
                     <connections>
                         <outlet property="collectionView" destination="xei-m6-zMg" id="sZh-RS-mGF"/>
                         <outlet property="loader" destination="chn-PO-PdD" id="Ndn-i3-2Rv"/>
@@ -326,7 +326,7 @@
                             <constraint firstItem="lx1-QA-8TZ" firstAttribute="leading" secondItem="g65-19-aJ1" secondAttribute="leading" id="ne0-fF-XRj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Articles" id="4DT-zx-bQi"/>
+                    <tabBarItem key="tabBarItem" title="Articles" image="news_icon" id="4DT-zx-bQi"/>
                     <connections>
                         <outlet property="collectionView" destination="rWv-7M-cWj" id="PVg-wa-d2C"/>
                         <outlet property="loader" destination="4SX-3X-rUR" id="kp4-IF-Up6"/>
@@ -579,7 +579,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GoogleNews30" width="30" height="30"/>
         <image name="back_button_img" width="25" height="41"/>
         <image name="newsLogo" width="160" height="160"/>
+        <image name="news_icon" width="30" height="30"/>
     </resources>
 </document>

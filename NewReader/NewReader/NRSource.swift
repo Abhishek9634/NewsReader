@@ -48,7 +48,7 @@ class NRSource: NSObject {
         self.small = self.urlsToLogos?["small"] as? NSString
         self.medium = self.urlsToLogos?["medium"] as? NSString
         self.large = self.urlsToLogos?["large"] as? NSString
-        print("SMALL : \(self.small!)")
+//        print("SMALL : \(self.small!)")
         
         self.sortBysAvailable = NSArray(array: dictionary["sortBysAvailable"] as! NSArray)
     }

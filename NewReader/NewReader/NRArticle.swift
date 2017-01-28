@@ -41,8 +41,10 @@ class NRArticle: NSObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         let date = dateFormatter.date(from: publishedAt as String)!
-        dateFormatter.dateFormat = "dd MMM yyyy"
+        dateFormatter.dateFormat = "dd MMM yyyy hh:mm a"
+        dateFormatter.timeZone = NSTimeZone(name: "IST") as TimeZone!
         let dateString = dateFormatter.string(from: date)
+        
 //        print("EXACT_DATE : \(dateString)")
         return dateString as NSString
     }

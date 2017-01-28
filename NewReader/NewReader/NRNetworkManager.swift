@@ -39,20 +39,24 @@ class NRNetworkManager: NSObject {
         let request : NSMutableURLRequest = NRHTTPRequest.getServerRequest(urlString: URLString, paramString: param)
         NRHTTPResponse.responseWithRequest(request: request, requestTitle: "FETCH_ARTICLES", completion: { (json, error) in
         
-            let dictionary : [String:Any] =  json as! [String : Any]
-            
-            self.status = dictionary["status"]! as? NSString
-            self.source = dictionary["source"]! as? NSString
-            self.sortBy = dictionary["sortBy"]! as? NSString
+            print("ERROR :: \(error?.localizedDescription)")
             self.articleArray = NSMutableArray()
-            
-            self.articles = NSArray(array: dictionary["articles"] as! NSArray)
-            
-            for articleDict in self.articles as! [[String:Any]] {
+            if (error == nil)
+            {
+                let dictionary : [String:Any] = json as! [String : Any]
                 
-                let article = NRArticle(dictionary: articleDict)
-                self.articleArray?.add(article)
-//                print("ARTICLE \n \(article.description)")
+                self.status = dictionary["status"]! as? NSString
+                self.source = dictionary["source"]! as? NSString
+                self.sortBy = dictionary["sortBy"]! as? NSString
+                
+                self.articles = NSArray(array: dictionary["articles"] as! NSArray)
+                
+                for articleDict in self.articles as! [[String:Any]] {
+                    
+                    let article = NRArticle(dictionary: articleDict)
+                    self.articleArray?.add(article)
+    //                print("ARTICLE \n \(article.description)")
+                    }
             }
             completion(self.articleArray!, error)
         })
@@ -69,17 +73,21 @@ class NRNetworkManager: NSObject {
         let request : NSMutableURLRequest = NRHTTPRequest.getServerRequest(urlString: URLString, paramString: param)
         NRHTTPResponse.responseWithRequest(request: request, requestTitle: "FETCH_SOURCES", completion: { (json, error) in
             
-            let dictionary : [String:Any] =  json as! [String : Any]
-            
-            self.status = dictionary["status"]! as? NSString
+            print("ERROR :: \(error?.localizedDescription)")
             self.sourceArray = NSMutableArray()
-            
-            self.sources = NSArray(array: dictionary["sources"] as! NSArray)
-            for sourcesDict in self.sources as! [[String:Any]] {
+            if (error == nil)
+            {
+                let dictionary : [String:Any] = json as! [String : Any]
                 
-                let sourceOb = NRSource(dictionary: sourcesDict)
-                self.sourceArray?.add(sourceOb)
-//                print("SOURCE \n \(sourceOb.description)")
+                self.status = dictionary["status"]! as? NSString
+                
+                self.sources = NSArray(array: dictionary["sources"] as! NSArray)
+                for sourcesDict in self.sources as! [[String:Any]] {
+                    
+                    let sourceOb = NRSource(dictionary: sourcesDict)
+                    self.sourceArray?.add(sourceOb)
+    //                print("SOURCE \n \(sourceOb.description)")
+                }
             }
             completion(self.sourceArray!, error)
         })

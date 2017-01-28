@@ -20,24 +20,28 @@ class NRHTTPResponse: NSObject {
         
         let task : URLSessionDataTask = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             
-            let httpResponse = response as! HTTPURLResponse
-            print("HTTP RESPONSE \(httpResponse.description) && CODE :: \(httpResponse.statusCode)")
-            print("ERROR RESPONSE (IF-ANY) :: \(error?.localizedDescription)")
-            
             var jsonResponse: Any? = nil
-            
-            do {
-                jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+            if (error != nil) {
+                print("ERROR RESPONSE (IF-ANY) :: \(error?.localizedDescription)")
+                completion(jsonResponse as Any, error as NSError?)
             }
-            catch let err as NSError
+            else
             {
-                print("RESPONSE_EXCEPTION :: \(err.localizedDescription)")
+                let httpResponse = response as! HTTPURLResponse
+                print("HTTP RESPONSE \(httpResponse.description) && CODE :: \(httpResponse.statusCode)")
+                if (httpResponse.statusCode == RESPONSE_CODE.SUCCESS.rawValue) {
+                    
+                    do {
+                        jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                    }
+                    catch let err as NSError
+                    {
+                        print("RESPONSE_EXCEPTION :: \(err.localizedDescription)")
+                    }
+                    completion(jsonResponse as Any, error as NSError?)
+                    }
+                    print("ERROR RESPONSE DATA (IF-ANY) :: \(jsonResponse)")
             }
-            if httpResponse.statusCode == RESPONSE_CODE.SUCCESS.rawValue {
-                //
-            }
-            completion(jsonResponse as Any, error as NSError?)
-            print("ERROR RESPONSE DATA (IF-ANY) :: \(jsonResponse)")
         }
         task.resume()
     }

@@ -33,7 +33,18 @@ class NRArticle: NSObject {
         self.newsdescription = dictionary["description"] as? NSString
         self.url = dictionary["url"] as? NSString
         self.urlToImage = dictionary["urlToImage"] as? NSString
-        self.publishedAt = dictionary["publishedAt"] as? NSString
+        self.publishedAt = self.parseDate(publishedAt: (dictionary["publishedAt"] as? NSString)!)
+    }
+    
+    public func parseDate(publishedAt : NSString) -> NSString {
+    
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = dateFormatter.date(from: publishedAt as String)!
+        dateFormatter.dateFormat = "dd MMM yyyy"
+        let dateString = dateFormatter.string(from: date)
+//        print("EXACT_DATE : \(dateString)")
+        return dateString as NSString
     }
     
     override var description : String {

@@ -78,7 +78,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         
         articleViewCell.backgroundColor = UIColor.white
         if (indexPath.row % 2 != 0) {
-            articleViewCell.backgroundColor = UIColor(red:225.0/255, green:225.0/255, blue:250.0/255, alpha:0.2)
+            articleViewCell.backgroundColor = UIColor(red:225.0/255, green:225.0/255, blue:250.0/255, alpha:0.4)
         }
         
         let article = self.collectionArray?.object(at: indexPath.row) as! NRArticle

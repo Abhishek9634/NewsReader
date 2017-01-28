@@ -6,18 +6,20 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
-import UIKit 
+/************************************************************************************************************
+ NRArticlesVC : THIS CLASS IS FOR ARTICLES COLLECTION VIEW.
+ ************************************************************************************************************/
+
+import UIKit
 import SDWebImage
 
 class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    
     let reusableCellIdentifier = "NRArticleCollectionViewCell" as String
     
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
-    
     @IBOutlet weak var loader: UIActivityIndicatorView!
+    
     var collectionArray : NSMutableArray?
     
     override func didReceiveMemoryWarning() {
@@ -41,14 +43,6 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         super.viewWillAppear(animated)
         
     }
-    
-    //====================================================================================================================================
-    // SEGMENT VIEW ACTION
-    //====================================================================================================================================
-    
-    @IBAction func segmentValueChanged(_ sender: Any) {
-        
-    }
 
     //====================================================================================================================================
     // COLLECTION VIEW DELEGATES
@@ -67,7 +61,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("ARTICLE_COUNT : \(self.collectionArray?.count)")
+//        print("ARTICLE_COUNT : \(self.collectionArray?.count)")
         return (self.collectionArray?.count)!
     }
     
@@ -87,7 +81,7 @@ class NRArticlesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         articleViewCell.titleLabel.text = article.title as String?
         articleViewCell.authorLabel.text = article.author as String?
         
-        print("ARTICLE_TITLE : \(article.title!)")
+//        print("ARTICLE_TITLE : \(article.title!)")
         
         return articleViewCell
     }

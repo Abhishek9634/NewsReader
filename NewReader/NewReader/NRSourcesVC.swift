@@ -6,17 +6,20 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
+/************************************************************************************************************
+ NRSourcesVC : THIS CLASS IS FOR SOURCES COLLECTION VIEW.
+ ************************************************************************************************************/
+
 import UIKit
 import SDWebImage
 
 class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var topView: UIView!                     // 1st UIVIEW WITH TITLE SOURCE
     @IBOutlet weak var segmentBaseView: UIView!             // 2nd UIVIEW : USING FOR SEGMENT
     
-    var segmentedControl : HMSegmentedControl?
+    var segmentedControl : HMSegmentedControl?              // SEGMENTED CONTROL FOR DIFF. TYPE OF SOURCE
     
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
@@ -54,7 +57,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     //====================================================================================================================================
-    // SEGMENT VIEW ACTION
+    // SEGMENT VIEW METHODS
     //====================================================================================================================================
     
     func intializeSegmentView() {
@@ -87,10 +90,15 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         
         self.segmentBaseView.addSubview(segmentedControl!)
         
+        // SEGEMENTED CONTROLL : CALL BACK WHEN USER TAPS
         self.segmentedControl?.indexChangeBlock = {(_ index: Int) -> Void in
             self.segmentedControlChangedValue(index: index)
         }
     }
+    
+    /**********************************************
+     SEGMENTED CONTROL TAP ACTION 
+     **********************************************/
     
     func segmentedControlChangedValue(index: Int) {
         
@@ -123,7 +131,7 @@ class NRSourcesVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("SOURCE_COUNT : \(self.collectionArray?.count)")
+//        print("SOURCE_COUNT : \(self.collectionArray?.count)")
         return (self.collectionArray?.count)!
     }
     

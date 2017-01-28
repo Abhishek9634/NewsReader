@@ -64,7 +64,7 @@
                                 <fontDescription key="fontDescription" name="CANDYINC" pointSize="66">
                                     <string key="family">CANDY INC. Copyright (c) 2010 by Billy Argel. All rights reserved. free for personal use only. complete set available contact billyargel@gmail.com</string>
                                 </fontDescription>
-                                <state key="normal" title="Let's Go">
+                                <state key="normal" title="Let's Go &gt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>

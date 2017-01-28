@@ -81,7 +81,7 @@ class MessagesViewController: MSMessagesAppViewController , UITableViewDelegate,
     }
 
     //=======================================================================================================================================
-    // TABLE VIEW DELEGATES
+    // iMessage EXTENSION : TABLE VIEW DELEGATES
     //=======================================================================================================================================
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -126,7 +126,7 @@ class MessagesViewController: MSMessagesAppViewController , UITableViewDelegate,
     }
     
     //====================================================================================================================================
-    // GET SOURCES FROM SERVER
+    // iMessage EXTENSION : GET SOURCES FROM SERVER
     //====================================================================================================================================
     
     func fetchSources() {

@@ -6,6 +6,10 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
+/************************************************************************************************************
+ NRArticlesVC : THIS CLASS IS GENERIC/ENTITY CLASS FOR ARTICLES
+ ************************************************************************************************************/
+
 import UIKit
 
 class NRArticle: NSObject {
@@ -21,10 +25,18 @@ class NRArticle: NSObject {
         
     }
     
+    /********************************************************
+     CUSTOM INTIALIZATION : INIT WITH DICTIONARY
+     ********************************************************/
+    
     init(dictionary : [String:Any]) {
         super.init()
         self.parseDictionary(dictionary: dictionary)
     }
+    
+    /********************************************************
+     PARSING DICTIONARY : MAPPING DATA TO CLASS PROPERTIES
+     ********************************************************/
     
     public func parseDictionary(dictionary : [String:Any]) {
     
@@ -36,6 +48,9 @@ class NRArticle: NSObject {
         self.publishedAt = self.parseDate(publishedAt: (dictionary["publishedAt"] as? NSString)!)
     }
     
+    /********************************************************
+     PUBLISH DATE: CONVERTING DATE TO READBLE FORMAT
+     ********************************************************/
     public func parseDate(publishedAt : NSString) -> NSString {
     
         let dateFormatter = DateFormatter()
@@ -48,6 +63,10 @@ class NRArticle: NSObject {
 //        print("EXACT_DATE : \(dateString)")
         return dateString as NSString
     }
+    
+    /********************************************************
+     OVERRIDE CLASS DESCRIPTION
+     ********************************************************/
     
     override var description : String {
         return "author : \(self.author!)\n title : \(self.title!)\n description : \(self.newsdescription!)\n url : \(self.url!)\n urlToImage : \(self.urlToImage!)\n publishedAt : \(self.publishedAt!)"

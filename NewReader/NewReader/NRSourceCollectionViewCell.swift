@@ -6,6 +6,11 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
+/************************************************************************************************************
+ NRSourceCollectionViewCell : THIS IS EXTENDED CLASS OF COLLECTION VIEW CELL
+                              FOR ARTICLE CELL IN NRSourcesVC
+ ************************************************************************************************************/
+
 import UIKit
 
 class NRSourceCollectionViewCell: UICollectionViewCell {

@@ -29,10 +29,18 @@ class NRSource: NSObject {
         
     }
     
+    /********************************************************
+     CUSTOM INTIALIZATION : INIT WITH DICTIONARY
+     ********************************************************/
+    
     init(dictionary : [String:Any]) {
         super.init()
         self.parseDictionary(dictionary: dictionary)
     }
+    
+    /********************************************************
+     PARSING DICTIONARY : MAPPING DATA TO CLASS PROPERTIES
+     ********************************************************/
     
     public func parseDictionary(dictionary : [String:Any]) {
         
@@ -52,6 +60,10 @@ class NRSource: NSObject {
         
         self.sortBysAvailable = NSArray(array: dictionary["sortBysAvailable"] as! NSArray)
     }
+    
+    /********************************************************
+     OVERRIDE CLASS DESCRIPTION
+     ********************************************************/
     
     override var description : String {
         

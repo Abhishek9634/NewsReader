@@ -6,6 +6,10 @@
 //  Copyright © 2017 Abhishek Thapliyal. All rights reserved.
 //
 
+/************************************************************************************************************
+ NRMainVC : WELCOME CLASS OR FIRST SCREEN
+ ************************************************************************************************************/
+
 import UIKit
 
 class NRMainVC: UIViewController {
@@ -19,7 +23,6 @@ class NRMainVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
     override func viewWillAppear(_ animated: Bool) {
         

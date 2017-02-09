@@ -1,4 +1,7 @@
 # NewsReader
+
+[![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
+
 Basic NewsReader App (in Swift 3 and Xcode 8.2.1) : Demo for UITableView, UICollectionView, NSURLSession JSON parsing and iMessage Extension.
 
 

@@ -17,3 +17,10 @@ target 'NewReader' do
   end
 
 end
+
+target 'NewsiMsgExtension' do
+    
+    pod 'SDWebImage', '~>3.8'
+    # Pods for NewReader
+        
+end

@@ -61,6 +61,7 @@
 		9A80A215966EF30FC81A5E65 /* Pods_NewReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */; };
 		BC9D66E67473FD70BDD13F67 /* Pods_NewReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597D7846C3B47A1533F45154 /* Pods_NewReaderTests.framework */; };
 		DF64A3535D52CDD91A95CF7E /* Pods_NewReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF6B219D938981C69389A42 /* Pods_NewReader.framework */; };
+		E27512D10F10924624100319 /* Pods_NewsiMsgExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B211B49E094E5ABDD190AD /* Pods_NewsiMsgExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19B211B49E094E5ABDD190AD /* Pods_NewsiMsgExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsiMsgExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4603EA021E3BECF70040B894 /* NoneShallPassDEMO-KCFonts.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NoneShallPassDEMO-KCFonts.ttf"; path = "NewReader/SF_UI_FONT/NoneShallPassDEMO-KCFonts.ttf"; sourceTree = "<group>"; };
 		461B8AE71E3B98B200650F14 /* CARPE DIEM MARK DEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CARPE DIEM MARK DEMO.otf"; path = "NewReader/SF_UI_FONT/CARPE DIEM MARK DEMO.otf"; sourceTree = "<group>"; };
@@ -162,6 +164,8 @@
 		597D7846C3B47A1533F45154 /* Pods_NewReaderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewReaderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C66AED5ECF240AE3852510 /* Pods-NewReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewReader/Pods-NewReader.debug.xcconfig"; sourceTree = "<group>"; };
 		8CC3785184199C4D721B4327 /* Pods-NewReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewReaderTests/Pods-NewReaderTests.release.xcconfig"; sourceTree = "<group>"; };
+		92A8A48425AFA026547607D9 /* Pods-NewsiMsgExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsiMsgExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewsiMsgExtension/Pods-NewsiMsgExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AF0DC8F92D2AF98BE9873AA7 /* Pods-NewsiMsgExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsiMsgExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewsiMsgExtension/Pods-NewsiMsgExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		B70BA6C8F2DDFE3627CD9FFD /* Pods-NewReaderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewReaderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewReaderUITests/Pods-NewReaderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D03C843EA7DA77DB42E5C4D4 /* Pods-NewReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-NewReader/Pods-NewReader.release.xcconfig"; sourceTree = "<group>"; };
 		F46571411811156148B01A2B /* Pods-NewReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NewReaderTests/Pods-NewReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				462CD6181E3A98E1001ADB0E /* Messages.framework in Frameworks */,
+				E27512D10F10924624100319 /* Pods_NewsiMsgExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +376,8 @@
 				8CC3785184199C4D721B4327 /* Pods-NewReaderTests.release.xcconfig */,
 				B70BA6C8F2DDFE3627CD9FFD /* Pods-NewReaderUITests.debug.xcconfig */,
 				581D293BAEFE9EEEAE56D959 /* Pods-NewReaderUITests.release.xcconfig */,
+				AF0DC8F92D2AF98BE9873AA7 /* Pods-NewsiMsgExtension.debug.xcconfig */,
+				92A8A48425AFA026547607D9 /* Pods-NewsiMsgExtension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -383,6 +390,7 @@
 				597D7846C3B47A1533F45154 /* Pods_NewReaderTests.framework */,
 				2EC3769B633940D4B951A18E /* Pods_NewReaderUITests.framework */,
 				462CD6171E3A98E1001ADB0E /* Messages.framework */,
+				19B211B49E094E5ABDD190AD /* Pods_NewsiMsgExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -394,9 +402,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 462CD6271E3A98E1001ADB0E /* Build configuration list for PBXNativeTarget "NewsiMsgExtension" */;
 			buildPhases = (
+				AE3F4B126AD3EBAD354C6010 /* [CP] Check Pods Manifest.lock */,
 				462CD6121E3A98E1001ADB0E /* Sources */,
 				462CD6131E3A98E1001ADB0E /* Frameworks */,
 				462CD6141E3A98E1001ADB0E /* Resources */,
+				9CF4D7EF78101B38E461A9BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -590,7 +600,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1D15ED1523F4A6A3E615C3BF /* [CP] Copy Pods Resources */ = {
@@ -620,7 +630,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		27FC26E737C51DBAB8F1F58B /* [CP] Copy Pods Resources */ = {
@@ -650,7 +660,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF4D7EF78101B38E461A9BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NewsiMsgExtension/Pods-NewsiMsgExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE3F4B126AD3EBAD354C6010 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		C2F6984AE4716891AB740C5A /* [CP] Embed Pods Frameworks */ = {
@@ -819,10 +859,14 @@
 /* Begin XCBuildConfiguration section */
 		462CD6251E3A98E1001ADB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0DC8F92D2AF98BE9873AA7 /* Pods-NewsiMsgExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				INFOPLIST_FILE = NewsiMsgExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Marvel.NewReader.NewsiMsgExtension;
@@ -834,10 +878,14 @@
 		};
 		462CD6261E3A98E1001ADB0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A8A48425AFA026547607D9 /* Pods-NewsiMsgExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+				);
 				INFOPLIST_FILE = NewsiMsgExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Marvel.NewReader.NewsiMsgExtension;

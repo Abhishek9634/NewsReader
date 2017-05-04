@@ -8,6 +8,7 @@
 
 import UIKit
 import Messages
+import SDWebImage
 
 class MessagesViewController: MSMessagesAppViewController , UITableViewDelegate, UITableViewDataSource {
     
@@ -117,6 +118,9 @@ class MessagesViewController: MSMessagesAppViewController , UITableViewDelegate,
         let source = self.tableArray?.object(at: indexPath.row) as! NRSource
         tableCell.titleLabel.text = source.name as String?
         tableCell.descriptionLabel.text = source.sourceDescription as String?
+        
+        let imageURL = NSURL(string : /*source.large as! String */  "https://s-media-cache-ak0.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg")
+        tableCell.imgView.sd_setImage(with: imageURL as URL!)
         
         return tableCell
     }

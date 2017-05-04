@@ -11,6 +11,7 @@ import UIKit
 class NRExtTableCell: UITableViewCell {
 
     
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     

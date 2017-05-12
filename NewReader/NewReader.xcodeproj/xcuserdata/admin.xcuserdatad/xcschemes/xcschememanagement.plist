@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>iWatchNews (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>iWatchNews.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -33,6 +43,11 @@
 			<true/>
 		</dict>
 		<key>46D7F9E21E36633300A453E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84B7E2291EBBD55C00763EB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

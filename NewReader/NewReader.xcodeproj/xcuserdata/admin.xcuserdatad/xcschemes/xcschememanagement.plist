@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>WatchFW.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>iWatchNews (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>46D7F9E21E36633300A453E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843741C41EC60FB9000C32CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
